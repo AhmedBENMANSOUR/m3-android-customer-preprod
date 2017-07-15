@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dioolcustomer.activities.MairchentAirtimeQuoteRequestActivity">
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="100%"
+        android:id="@+id/RelativeLayout1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/fragment_map_quote_request" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="100%"
+        android:layout_below="@+id/RelativeLayout1"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        >
+
+
+
+
+        <!--android:layout_gravity="center"
+            android:orientation="vertical"-->
+        <LinearLayout
+            android:id="@+id/quote_request_layout"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent"
+            android:layout_marginTop="15dp">
+
+
+            <LinearLayout
+                android:id="@+id/cashin_amount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/cashin_amount_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/amount" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:ems="2"
+                    android:inputType="text"
+                    android:text="@string/currency_name" />
+
+                <EditText
+                    android:id="@+id/quote_request_amount_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:minEms="9" />
+
+
+            </LinearLayout>
+
+            <!--android:layout_marginTop="60dp"-->
+            <LinearLayout
+                android:id="@+id/layout_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <RadioGroup
+                    android:id="@+id/radioOperation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioDepot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cashinOperation"
+                        android:gravity="left"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/radioRetrait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/cashoutOperation" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <!-- android:layout_marginTop="60dp"-->
+            <LinearLayout
+                android:id="@+id/cashin_operator_button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="120dp"
+                    android:background="@drawable/btnmauve"
+                    android:textStyle="normal|bold|italic"
+                    android:text="@string/send"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:width="120dp"
+                    android:background="@drawable/btnmauve"
+                    android:textStyle="normal|bold|italic"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/close_quote_request_layout"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:gravity="center">
+
+            <!--android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal"-->
+
+            <LinearLayout
+                android:id="@+id/quote_request_amount_value_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:inputType="text"
+                    android:text="Amount" />
+
+                <TextView
+                    android:id="@+id/amount_quote_request_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:inputType="text"/>
+
+
+
+            </LinearLayout>
+
+            <!--android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal"-->
+            <LinearLayout
+                android:id="@+id/quote_request_operation_value_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:inputType="text"
+                    android:text="Operation" />
+
+                <TextView
+                    android:id="@+id/operation_quote_request_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:inputType="text" />
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/quote_request_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/message_looking_for_quote_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Nous sommes entrain de chercher un merchant"
+                    android:textColor="@color/violet"
+                    android:inputType="text"/>
+
+
+
+            </LinearLayout>
+
+            <!--android:layout_gravity="center"
+            android:gravity="center_horizontal"-->
+
+
+            <LinearLayout
+                android:id="@+id/quote_request_shop_adrress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/shop_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:inputType="text"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/quote_request_shopname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/shopname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:inputType="text"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/quote_request_button_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--android:gravity="center"-->
+                <!--android:width="120dp"-->
+                <Button
+                    android:id="@+id/close_quote_request_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btnmauve"
+                    android:textStyle="normal|bold|italic"
+                    android:text="close quote request"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.percent.PercentRelativeLayout>

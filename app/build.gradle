@@ -1,0 +1,196 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+        mavenCentral()
+        maven {
+            url 'https://dl.bintray.com/intercom/intercom-maven'
+        }
+        maven {
+            url "https://github.com/omadahealth/omada-nexus/raw/master/release"
+        }
+
+        maven {
+            url "https://jitpack.io"
+        }
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'android-apt'
+//apply plugin: 'com.google.gms.google-services'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'http://mobile-sdk.jumio.com' }
+    maven { url "http://dl.bintray.com/jjhesk/maven" }
+    maven {
+        url "https://github.com/omadahealth/omada-nexus/raw/master/release"
+    }
+    maven { url "http://dl.bintray.com/populov/maven" }
+
+    mavenCentral()
+
+
+}
+
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'mymoneymobilemerchant'
+            keyPassword 'b2TDiool@MyMoneyMobile|$$2017'
+            storeFile file('D:/Developpement/StackTech/sauvegarde/signature android/my money mobile merchant/mymoneymobilemerchant.jks')
+            storePassword 'b2TDiool@MyMoneyMobile|$$2017'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.diool"
+        minSdkVersion 17
+        targetSdkVersion 23
+        // Enabling multidex support.
+        multiDexEnabled true
+
+    }
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            debuggable false
+            jniDebuggable false
+            signingConfig signingConfigs.config
+        }
+        shrunk {
+            minifyEnabled true
+            shrinkResources true
+        }
+        big {
+            minifyEnabled false
+            shrinkResources false
+        }
+        debug {
+            debuggable false
+            jniDebuggable false
+            signingConfig signingConfigs.config
+        }
+    }
+    lintOptions {
+        // set to true to turn off analysis progress reporting by lint
+        quiet true
+        // if true, stop the gradle build if errors are found
+        abortOnError false
+        // if true, only report errors
+        ignoreWarnings true
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                output.outputFile = new File(outputFile.parent, "DIOOL.apk")
+            }
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/maven/com.squareup.okhttp/okhttp/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okhttp/okhttp/pom.properties'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.properties'
+    }
+}
+
+dependencies {
+    compile files('libs/acssmc-1.1.1.jar')
+    compile files('libs/core-3.1.0.jar')
+    compile files('libs/sdtapi.jar')
+    compile files('libs/SmartCardLib.jar')
+    compile files('libs/telpo_api.jar')
+    compile('com.digits.sdk.android:digits:1.9.3@aar') {
+        transitive = true;
+    }
+    compile('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
+    compile('com.segment.analytics.android.integrations:google-analytics:1.0.0') {
+        transitive = true
+    }
+    compile('io.branch.segment.analytics.android.integrations:library:1.0.0-RELEASE') {
+        transitive = true
+    }
+    compile('io.intercom.android:intercom-sdk-base:1.+@aar') {
+        transitive = true
+    }
+    compile('com.github.orangegangsters:lollipin:1.9.3@aar') {
+        transitive = true
+    }
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.7@aar') {
+        transitive = true;
+    }
+    compile('de.keyboardsurfer.android.widget:crouton:1.8.5@aar') {
+        // exclusion is not necessary, but generally a good idea.
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+    compile 'com.segment.analytics.android:analytics:+'
+    compile 'commons-io:commons-io:2.0.1'
+    compile 'com.mobsandgeeks:android-saripaar:2.0.3'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.airbnb:deeplinkdispatch:1.5.0'
+    compile 'cc.cloudist.acplibrary:library:1.2.1'
+    compile 'com.jumio.android:jumio-mobile-sdk:1.9.0@aar'
+    compile 'com.jumio.android:netverify-resources:1.9.0@aar'
+    compile 'com.jumio.android:javadoc:1.9.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.google.android.gms:play-services:9.2.1'
+    compile 'com.google.maps.android:android-maps-utils:0.4'
+    compile 'com.auth0.android:lock:1.15.+'
+    compile 'com.auth0.android:lock-passwordless:1.15.+'
+    compile 'com.auth0.android:lock-email:1.10.+'
+    compile 'com.auth0.android:core:1.14.1'
+    compile 'com.auth0.android:identity-core:1.14.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.github.citux:datetimepicker:0.2.0'
+    compile 'joda-time:joda-time:2.9.4'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.easing:library:1.0.1@aar'
+    compile 'com.daimajia.androidanimations:library:1.1.3@aar'
+    compile 'com.itextpdf:itextg:5.5.9'
+    compile 'com.github.rampo.updatechecker:library:2.1.8'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+    compile 'com.google.firebase:firebase-ads:9.0.1'
+    compile 'com.google.android.gms:play-services-maps:9.0.1'
+    compile 'com.android.support:percent:22.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'br.com.liveo:navigationdrawer-material:2.5.1'
+    compile 'de.hdodenhof:circleimageview:1.2.1'
+    apt 'com.airbnb:deeplinkdispatch-processor:1.5.0'
+    provided 'org.projectlombok:lombok:1.12.6'
+}

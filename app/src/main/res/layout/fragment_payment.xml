@@ -1,0 +1,180 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dioolcustomer.fragments.PaymentFragment">
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        style="?metaButtonBarStyle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/violet">
+
+            <TextView
+                android:id="@+id/user_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:textStyle="normal|bold|italic"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            card_view:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layout_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView_da_balance_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/solde_depot"
+                            android:textStyle="normal|bold|italic"
+                            android:textColor="@color/violet"/>
+
+                        <TextView
+                            android:id="@+id/textView_da_balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0.0"
+                            android:textStyle="normal|bold|italic"
+                            android:textColor="@color/violet"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/currency_name"
+                            android:textStyle="normal|bold|italic"
+                            android:textColor="@color/violet"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_revenue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:textColor="@color/violet">
+
+                        <TextView
+                            android:id="@+id/textView_rev_balance_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="@string/solde_rev"
+                            android:textStyle="normal|bold|italic"
+                            android:textColor="@color/violet"/>
+
+                        <TextView
+                            android:id="@+id/textView_rev_balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="0.0"
+                            android:textStyle="normal|bold|italic"
+                            android:textColor="@color/violet"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="right"
+                            android:text="@string/currency_name"
+                            android:textStyle="normal|bold|italic"
+                            android:textColor="@color/violet"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_redeem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/buttonRedeem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btnmauve"
+                        android:gravity="center"
+                        android:text="@string/redeem"
+                        android:textColor="@color/white"
+                        android:textStyle="normal|bold|italic"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/messageLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/select_service"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/paymentbutton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnmauve"
+            android:drawableLeft="@drawable/check"
+            android:text="@string/paymentmenu"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold|italic"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

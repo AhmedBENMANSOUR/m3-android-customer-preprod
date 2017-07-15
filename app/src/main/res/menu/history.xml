@@ -1,0 +1,29 @@
+
+<!-- "Mark Favorite", should appear as action button if possible -->
+
+
+<!-- Settings, should always be in the overflow -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/send_file"
+        app:showAsAction="always"
+        android:icon="@drawable/send_file"
+        android:title="@string/send_file"/>
+
+    <item
+        android:id="@+id/save"
+        app:showAsAction="always"
+        android:icon="@drawable/donwload"
+        android:title="@string/save"/>
+
+    <item
+        android:id="@+id/select_date"
+        app:showAsAction="always"
+        android:icon="@drawable/calendar"
+        android:title="@string/calendar"/>
+
+
+</menu>

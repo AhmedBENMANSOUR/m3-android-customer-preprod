@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/tuti_arrow_left_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/tuto_bt_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_alignBottom="@+id/tuti_arrow_left_home"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:text="Cliquez ici pour fermer le tutorial" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="80dp">
+
+            <TextView
+                android:id="@+id/text_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="Veuiilez créer puis confirmer votre code de sécurité pour protéger vos informations. Ce code sera demandé pour lancer l'application" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_slide"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/text_main"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/arrow_middle_left" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_middle_right"></ImageView>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/oublie_arrow_home"
+                android:layout_below="@+id/layout_slide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/arrow_top_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/oublie_arrow_home"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:text="Cliquez ici pour réinitialiser votre code PIN" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

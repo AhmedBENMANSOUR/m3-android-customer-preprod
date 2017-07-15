@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pin_code_step_enable_confirm">Confirmer votre code PIN</string>
+    <string name="pin_code_step_create">Créer votre code PIN</string>
+    <!-- For Permission
+     <string name="dialog_permission_single_request_content">%2$s demande la permission pour accéder \'%1$s\'. Merci d\'autoriser \'%1$s\' dans  Settings/Applications/%2$s pour continuer.</string>
+    <string name="dialog_permissions_two_request_content">%3$s demande la permission pour accéder \'% \'%1$s\' and \'%2$s\'. Merci d\'autoriser \'%1$s\' et \'%2$s\' dans Settings/Applications/%3$s pour continuer.</string>
+    -->
+    <string name="require_permission_location">Localisation</string>
+    <string name="dialog_permission_request_title">Permission requise</string>
+    <string name="dialog_permission_deny_button">Accepter</string>
+    <string name="dialog_permission_allow_button">Refuser</string>.
+    <string name="dialog_permission_single_request_content" formatted="false">%2$s demande la permission pour accéder \'%1$s\'. Merci d\'autoriser \'%1$s\' dans  Settings/Applications/%2$s pour continuer.</string>
+    <string name="dialog_permissions_two_request_content" formatted="false">%3$s demande la permission pour accéder \'% \'%1$s\' and \'%2$s\'. Merci d\'autoriser \'%1$s\' et \'%2$s\' dans Settings/Applications/%3$s pour continuer.</string>
+
+
+    <string name="require_permission_stockage">Stockage des données</string>
+
+
+    <string name="auth_client_ID">p3arcAOuch2WQX8j5zLncbndPLkq9Yb3</string>
+    <string name="auth_client_DOMAIN">mymoneymobile.eu.auth0.com</string>
+    <string name="auth_scope">openid roles user_id email profil</string>
+    <string name="data_base">PreprodDB</string>
+
+
+    <string name="app_version">3.0.0</string>
+    <string name="buck_end_version">2.4.0</string>
+
+    <string name="login_failed_title">My Money Mobile</string>
+    <string name="login_failed_message">Adresse mail ou mot de passe non valide!</string>
+
+    <string name="fr_text_saisir_mail" translatable="false">Veuillez saisir votre adresse mail</string>
+    <string name="email_field" translatable="false">Adresse mail</string>
+
+
+    <string name="app_name" translatable="false">DIOOL</string>
+    <string name="login" translatable="false">Se Connecter</string>
+    <string name="login_passwordles" translatable="false">Se Connecter via SMS</string>
+
+    <string name="fr_text_username" translatable="false">Identifiant</string>
+    <string name="fr_text_password" translatable="false">Mot De Passe</string>
+    <string name="airtimemenu" translatable="false">Recharges</string>
+    <string name="mobilemoneymenu" translatable="false">Mobile Money</string>
+    <string name="merchantdepositmenu" translatable="false">Dépôts Marchand</string>
+    <string name="Orange" translatable="false">Orange</string>
+    <string name="MTN" translatable="false">MTN</string>
+    <string name="NextTel" translatable="false">Nexttel</string>
+    <string name="number" translatable="false">Numéro</string>
+    <string name="identifiant" translatable="false">Identifiant</string>
+    <string name="number_hint" translatable="false"><i>6XXXXXXXX</i></string>
+    <string name="amount" translatable="false">Montant</string>
+    <string name="send" translatable="false">Envoyer</string>
+    <string name="cancel" translatable="false">Annuler</string>
+    <string name="ok" translatable="false">OK</string>
+
+    <string name="network_menu" translatable="false">Mon réseau d\'agents</string>
+    <string name="list_view_map" translatable="false">Mode liste</string>
+    <string name="map_view_map" translatable="false">Mode Map</string>
+    <string name="paymentmenu" translatable="false">Encaissement</string>
+    <string name="addfundsmenu" translatable="false">Add Funds</string>
+    <string name="witdrawfundsmenu" translatable="false">Withdraw Funds</string>
+    <string name="transfertdioolmenu" translatable="false">Transfert de solde</string>
+    <string name="cashinmenu" translatable="false">Dépôts</string>
+    <string name="cashinOperation" translatable="false">Dépôt</string>
+    <string name="cashoutmenu" translatable="false">Retraits</string>
+    <string name="cashoutOperation" translatable="false">Retrait</string>
+    <string name="select_service" translatable="false">Sélectionnez un Service</string>
+    <string name="solde_depot" translatable="false">"<b>Solde : </b>"</string>
+    <string name="solde_rev" translatable="false"><b>"Revenu : "</b></string>
+    <string name="loyalty" translatable="false"><b>"Points : "</b></string>
+    <string name="loyalty_unit" translatable="false">points </string>
+    <string name="redeem" translatable="false">Récupérer</string>
+    <string name="settings" translatable="false">Paramètres</string>
+    <string name="changepassword" translatable="false">Changer le Mot de Passe</string>
+    <string name="fr_old_password" translatable="false">Ancien Mot de Passe</string>
+    <string name="fr_new_password" translatable="false">Nouveau Mot de Passe</string>
+    <string name="fr_confirm_password" translatable="false">Confirmer Mot de Passe</string>
+    <string name="validate" translatable="false">Valider</string>
+    <string name="logout" translatable="false">Se Déconnecter</string>
+    <string name="refresh" translatable="false">Refresh Balance</string>
+    <string name="share" translatable="false">Share application</string>
+    <string name="map" translatable="false">Map</string>
+
+    <string name="add_network" translatable="false">Ajouter un marchand</string>
+    <string name="add_account" translatable="false">Ajouter Compte</string>
+    <string name="send_file" translatable="false">Send File</string>
+    <string name="save" translatable="false">Save</string>
+    <string name="print" translatable="false">Print</string>
+    <string name="calendar" translatable="false">Calendar</string>
+
+    <string name="validation_dialog_text">Entrez la partie XXXXXX de la reference CO.YYMMDD.hhmm.XXXXXX du client</string>
+    <string name="successfull_operation">Opération effectuée avec succès</string>
+    <string name="waiting_cashout_ocm">Le client doit composer #150# pour valider la demande </string>
+    <string name="waiting_cashout_mtnc">Le client doit composer *126*1# pour valider la demande</string>
+    <string name="failed_operation">opération échouée</string>
+    <string name="failed_connection">La connexion a échoué</string>
+    <string name="failed_connection_title">Problème de connexion</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="cgu_check_text">J\'accepte les termes et conditions </string>
+    <string name="show_password_check_text">Afficher le mot de passe</string>
+    <string name="cgu_check_validation_text">Il faut accepter les termes et conditions</string>
+    <string name="cgu_link_text">Termes et conditions</string>
+    <string name="login_hint">
+      <i>email</i>
+    </string>
+    <string name="number_prefix">237</string>
+    <string name="subdistributor">Sous Distributeur: </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signup">S\'enregistrer</string>
+    <string name="login_aut">Se connecter via Auth0</string>
+    <string name="signup_title_customer">Enregistrement: Usage personnel </string>
+    <string name="signup_title_merchant">Enregistrement: Usage commercial </string>
+    <string name="airtimemenu_customer">Transfert de Crédit</string>
+    <string name="cashoutmenu_customer">Charger Mon Compte</string>
+    <string name="cashinmenu_customer">Transfert d\'Argent</string>
+
+
+    <string name="profile">Profile</string>
+    <string name="map_action_title">Cash Points</string>
+    <string name="cashpointsmenu_customer">Les Cash Points autour de Moi</string>
+    <string name="currency_name">XAF</string>
+    <string name="revenue_customer"><b>Point de fidélité:</b> 0 points</string>
+    <string name="value_customer">Trouvez le cash point le plus proche et gagnez des points de fidélité lors de vos transactions</string>
+    <string name="value_merchant">Combinez recharges et mobile money pour augmenter vos revenus</string>
+    <string name="register_button">Register</string>
+    <string name="forgotpassword"><a href="https://emonize.mymoneytop.com/client/#/resetpassword"> Mot de passe oublié ?</a></string>
+    <string name="title_activity_forgotpassword">Mot de passe oublié</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_transactions">Transactions</string>
+    <string name="title_gps_dialog">Map</string>
+    <string name="text_gps_dialog">Map</string>
+    <string name="text_webservice_problem_title">Probléme</string>
+    <string name="text_webservice_problem_content">Probléme lors du chargement du résultat</string>
+
+    <string name="netverify_actionbar_title_country">Pays d\'émission </string>
+    <string name="netverify_choose_country">Choisir le pays d\'émission</string>
+    <string name="netverify_button_select_another_country">Choisir un autre pays</string>
+
+    <string name="netverify_actionbar_title_documenttype">Type de document</string>
+
+    <string name="netverify_milestone_upload">Upload</string>
+    <string name="netverify_milestone_finish">Terminer</string>
+
+    <string name="netverify_documenttype_passport">Passeport</string>
+    <string name="netverify_documenttype_visa">Visa</string>
+    <string name="netverify_documenttype_idcard">Carte d\'identité</string>
+    <string name="netverify_documenttype_driverlicense">Permis de conduire</string>
+    <!--
+    <string name="netverify_documentvariant_paper_idcard">Paper identity card</string>
+    <string name="netverify_documentvariant_plastic_idcard">Plastic identity card</string>
+    <string name="netverify_documentvariant_paper_driverlicense">Paper driver license</string>
+    <string name="netverify_documentvariant_plastic_driverlicense">Plastic driver license</string>
+-->
+    <string name="netverify_front">Recto</string>
+    <string name="netverify_take_photo_front">Appuyez pour prendre ou utiliser une photo recto du document.</string>
+    <string name="netverify_change_photo_front">Appuyez pour changer la photo recto du document.</string>
+
+    <string name="netverify_back">Verso</string>
+    <string name="netverify_take_photo_back">Appuyez pour prendre ou utiliser une photo verso du document.</string>
+    <string name="netverify_change_photo_back">Appuyez pour changer la photo verso du document.</string>
+    <!--
+    <string name="netverify_face">Face</string>
+    <string name="netverify_take_photo_face">Tap to take a photo of your face.</string>
+    <string name="netverify_change_photo_face">Tap to retake the photo of your face.</string>
+
+    <string name="netverify_photo_not_necessary">Not necessary to take a photo.</string>
+
+    <string name="netverify_button_submit">Submit</string>
+    <string name="netverify_button_done">Done</string>
+
+
+    <string name="netverify_dialog_title_error">Error</string>
+    <string name="netverify_error_network_problems">We have encountered a network communication problem</string>
+    <string name="netverify_error_auth_failed">Authentication failed</string>
+    <string name="netverify_error_device_is_offline">No internet connection available</string>
+    <string name="netverify_error_startup_error">Scanning not available at this time, please contact the app vendor</string>
+    <string name="netverify_error_cancelled_by_user">Cancelled by end-user</string>
+    <string name="netverify_error_no_camera_connection">The camera is currently not available</string>
+    <string name="netverify_error_saving_instance_not_supported">Saving instance is not supported</string>
+    <string name="netverify_error_certificate_not_valid_anymore">Certificate not valid anymore. Please update your application.</string>
+
+-->
+    <string name="netverify_infobar_issuer_country">Confirmez ou sélectionnez le pays d\'émission de la carte d\'identité que vous voulez vérifier</string>
+    <string name="netverify_infobar_extraction_in_progress">Extraction en cours ...</string>
+    <string name="netverify_infobar_document_type">Sélectionnez le type d\'ID que vous souhaitez numériser</string>
+    <string name="netverify_infobar_document_variant">Sélectionnez le style d\'ID que vous souhaitez numériser</string>
+    <string name="netverify_infobar_help_button">Aide</string>
+
+
+    <string name="netverify_actionbar_title_scan">Photo de votre carte</string>
+    <string name="netverify_actionbar_title_scan_face">Votre photo</string>
+
+    <string name="netverify_infobar_camera_view_barcode_driverlicense">Scan the bar code on the back</string>
+    <string name="netverify_infobar_camera_view_passport">Place passport within the brackets</string>
+    <string name="netverify_infobar_camera_view_driverlicense">Place driver license within brackets</string>
+    <string name="netverify_infobar_camera_view_idcard">Place identity card within brackets</string>
+    <string name="netverify_infobar_camera_view_manual_front">Please scan the front of your document</string>
+    <string name="netverify_infobar_camera_view_manual_back">Please scan the back of your document</string>
+
+    <string name="netverify_use_front_side_of_card">RECTO DE VOTRE CARTE</string>
+    <string name="netverify_use_back_side_of_card">VERSO DE VOTRE CARTE</string>
+
+    <string name="netverify_overlay_liveness_advice">Déplacez vos yeux ou cligner</string>
+    <string name="netverify_overlay_passport">PASSEPORT</string>
+    <string name="netverify_overlay_visa">VISA</string>
+    <string name="netverify_confirmation_button_ok">Confirmer</string>
+    <string name="netverify_confirmation_button_retry">Réessayer</string>
+    <!--
+    <string name="netverify_actionbar_title_submission">Submission</string>
+    <string name="netverify_button_retry">Retry</string>
+
+    <string name="netverify_submission_error">There was an error during the upload. You may check your internet connection and retry.</string>
+    <string name="netverify_submission_complete">Thank you! Your submission was successfully received.</string>
+    <string name="netverify_submission_uploading">Your submission has been encrypted and is being securely uploaded to our servers. This may take some time.</string>
+    <string name="netverify_actionbar_title_upload">Upload</string>
+
+
+    <string name="netverify_help_view_fallback_button_mrz">There is no code on my ID</string>
+    <string name="netverify_help_view_fallback_button_mrv">I\'m not able to scan my VISA</string>
+    <string name="netverify_help_view_fallback_button_barcode">No barcode on my document</string>
+    <string name="netverify_help_view_templatematcher_fallback">Detection not working</string>
+    -->
+    <string name="netverify_help_view_linefind">Comment faire de la bonne façon.</string>
+    <!--
+    <string name="netverify_help_view_liveness_line1">Place your face within the frame to start the scanning process.</string>
+    <string name="netverify_help_view_liveness_line2">Blink twice to complete the scanning process.</string>
+    <string name="netverify_help_view_liveness_line3">The scanning takes 5 seconds.</string>
+    <string name="netverify_help_view_driverlicense_barcode">Scan the bar code in the highlighted green section.</string>
+    -->
+    <string name="netverify_help_view_passport">Vos informations personnelles sur la page passeport photo. Le code se trouve au fond.</string>
+    <string name="netverify_help_view_visa">Vos informations personnelles sur la page de visa. Le code se trouve au fond.</string>
+
+    <string name="netverify_help_view_idcard">Le code de la carte d\'identité est en bas.</string>
+    <string name="netverify_help_view_driverlicense_mrz">Le code du permis de conduire est en bas.</string>
+    <!--
+    <string name="netverify_help_view_templatematcher_id_line1">Make sure not to crop the ID card while trying to get as close as possible.</string>
+    <string name="netverify_help_view_templatematcher_id_line2">Bring the ID card fully into the camera frame and it will be automatically detected.</string>
+    -->
+    <string name="netverify_help_view_mrz">Assurez-vous de correspondre à la totalité du code dans la zone verte surlignée.</string>
+
+
+    <string name="netverify_button_cancel">Annuler</string>
+    <string name="netverify_confirm_linefinder_result_title">Assurez-vous que toutes les données sont lisibles. Sinon, s\'il vous plaît réessayer.</string>
+
+    <!--
+
+    <string name="netverify_search">Search</string>
+    <string name="netverify_button_select_country">Select country</string>
+    <string name="netverify_button_change_photos">Change photos</string>
+    <string name="netverify_empty_list">No data in list</string>
+    <string name="netverify_actionbar_title_loading">Loading</string>
+    <string name="netverify_actionbar_title_finished">Finished</string>
+    <string name="netverify_actionbar_title_documenttype">Document type</string>
+    <string name="netverify_actionbar_title_documentvariant">Document style</string>
+    -->
+    <string name="netverify_infobar_camera_view_front_idcard_templatematcher">Placez le recto de votre carte d\'identité dans le cadre</string>
+    <string name="netverify_infobar_camera_view_back_idcard_templatematcher">Placez le verso de votre carte d\'identité dans le cadre</string>
+    <string name="netverify_infobar_camera_view_front_driverlicense_templatematcher">Placez le verso de votre permis de conduire dans le cadre</string>
+    <string name="netverify_infobar_camera_view_back_driverlicense_templatematcher">Placez le verso de votre permis de conduire dans le cadre</string>
+    <string name="netverify_infobar_camera_view_face">Placez votre visage en face de la caméra et prendre la photo.</string>
+    <string name="netverify_infobar_camera_view_face_liveness">Placez votre visage en position proche de la caméra pendant 5 secondes.</string>
+
+    <string name="netverify_infobar_camera_view_passport_frame">Placez le passeport dans le cadre</string>
+    <string name="netverify_infobar_camera_view_visa_frame">Placez le visa dans le cadre</string>
+    <string name="netverify_infobar_camera_view_front_passport">Placez le recto de votre passeport dans le cadre</string>
+    <string name="netverify_infobar_camera_view_back_passport">Placez le verso de votre passeport dans le cadre</string>
+    <!--
+    <string name="netverify_infobar_processing_image">Processing image ...</string>
+    <string name="netverify_help_view_templatematcher_dl_line2">Bring the driver license fully into the camera frame and it will be automatically detected.</string>
+    <string name="netverify_help_view_templatematcher_dl_line1">Make sure not to crop the driver license while trying to get as close as possible.</string>
+    <string name="netverify_require_us_address_title">Please scan the front of your driver license</string>
+    <string name="netverify_require_us_address_message">The barcode did not contain your address. Scan the front of your driver license where the address is shown.</string>
+    <string name="netverify_require_us_address_button">Scan front</string>
+
+    -->
+
+    <!-- Strings for NFC/ePassport related stuff  -->
+    <!--
+    <string name="netverify_bac_dialog_content">Please double-check passport data and correct manually. Click Retry to resume scanning.</string>
+    <string name="netverify_bac_dialog_title">Authentication error</string>
+    <string name="netverify_nfc_retrieving_data">Reading data from ePassport</string>
+    <string name="netverify_nfc_requestview_button_text">I don\'t have an ePassport</string>
+    <string name="netverify_nfc_requestview_text1">ePassport scanning is more secure and will significantly speed up your verification.</string>
+    <string name="netverify_nfc_requestview_text2">Please check if your passport cover has the following symbol X. If so, place your phone on the passport.</string>
+    <string name="netverify_nfc_requestview_text2_usa">Please check if your passport cover has the following symbol X. If so, open the passport and place your phone as illustrated.</string>
+    <string name="netverify_nfc_view_title">Use your ePassport</string>
+    <string name="netverify_nfc_extraction_started_actionbar">Reading</string>
+    <string name="netverify_nfc_extraction_finished_actionbar">Reading complete</string>
+    <string name="netverify_nfc_general_error_dialog_content">An error occurred during reading ePassport data. Press Retry and place you phone on the passport again</string>
+    <string name="netverify_nfc_general_error_dialog_title">Reading error</string>
+    <string name="netverify_nfc_enable_dialog_text">To get more out of your passport, please click on OK and enable your phone\'s NFC capability!</string>
+    <string name="netverify_nfc_reading_data_complete">Reading data complete!</string>
+    <string name="netverify_nfc_bacentry_dialog_ppnumber">passport number</string>
+    <string name="netverify_nfc_bacentry_dialog_dob">date of birth</string>
+    <string name="netverify_nfc_bacentry_dialog_doe">date of expiry</string>
+
+    -->
+
+    <!-- POSSIBLE NETSWIPE SDK STRINGS TO OVERRIDE-->
+    <!--
+
+	<string name="netswipe_activity_title_scan">Scan card</string>
+
+	<string name="netswipe_scan_area_info_extraction">Extraction in progress ...</string>
+
+	<string name="netswipe_error_view_message_background_execution_not_supported">Background execution not supported</string>
+	<string name="netswipe_error_view_message_auth_failed">Authentication failed</string>
+	<string name="netswipe_error_view_message_startup_error">Scanning not available at this time, please contact the app vendor</string>
+	<string name="netswipe_error_view_message_cancelled_by_user">Cancelled by end-user</string>
+	<string name="netswipe_error_view_message_credit_card_expired">Your card is expired</string>
+	<string name="netswipe_error_view_message_credit_card_not_supported">Your card type is not accepted</string>
+    <string name="netswipe_error_view_message_certificate_not_valid_anymore">Certificate not valid anymore. Please update your application.</string>
+
+	<string name="netswipe_error_view_button_try_again">Try again</string>
+	<string name="netswipe_error_view_button_cancel">Cancel</string>
+	<string name="netswipe_error_view_title">Error</string>
+
+
+
+	<string name="netswipe_scan_area_present_your_card_number">PRESENT YOUR CARD NUMBER</string>
+	<string name="netswipe_scan_area_valid_thru">VALID\nTHRU</string>
+	<string name="netswipe_scan_area_expiry_date">MM/YY</string>
+	<string name="netswipe_scan_area_card_holder">Danielle Jumio</string>
+
+	<string name="netswipe_activity_title_additional_info">Additional info</string>
+	<string name="netswipe_activity_title_manual_entry">Manual entry</string>
+	<string name="netswipe_manual_entry_button_finish">Done</string>
+
+	<string name="netswipe_manual_entry_credit_card">Credit card number</string>
+	<string name="netswipe_manual_entry_valid_through">Valid through</string>
+
+	<string name="netswipe_manual_entry_hint_security_code">Your code</string>
+	<string name="netswipe_manual_entry_cvv">CVV</string>
+	<string name="netswipe_manual_entry_cvc">CVC</string>
+	<string name="netswipe_manual_entry_cid">CID</string>
+	<string name="netswipe_manual_entry_cav">CAV</string>
+
+	<string name="netswipe_manual_entry_cardholder_name">Card holder</string>
+	<string name="netswipe_manual_entry_card_number_not_supported">Your card type is not accepted</string>
+	<string name="netswipe_manual_entry_card_number_invalid">Invalid card number</string>
+
+
+
+	<string name="netswipe_error_view_message_no_camera_connection">The camera is currently not available</string>
+	<string name="netswipe_scan_area_creditcard_number">1234 5678 9123 4567</string>
+	<string name="netswipe_manual_entry_hint_month">MM</string>
+	<string name="netswipe_manual_entry_hint_year">YY</string>
+
+
+	-->
+
+    <string name="not_find_picture">Document non trouvée</string>
+    <string name="operation_result">Result</string>
+    <string name="LowBattery">Low battery, please connect the charger!</string>
+    <string name="dlg_ok">Confirm</string>
+    <string name="operation_fail">Operation failed</string>
+    <string name="overTemp">over temp !</string>
+    <string name="print_text">Print text</string>
+    <string name="history_text_customer">Voir mes transferts </string>
+    <string name="history_text_merchant">Relevé des transactions </string>
+    <string name="request_transaction_text_button">Relevé des récupérations </string>
+    <string name="history_redeem_text_merchant">Relevé des récupérations </string>
+    <string name="quote_request_text_merchant">Quote Request </string>
+    <string name="left_margin">Left margin:</string>
+    <string name="right_margin">Right margin</string>
+    <string name="row_space">Row space:</string>
+    <string name="font_size">Font size：</string>
+    <string name="gray_level">Gray level:</string>
+    <string name="outOfLeft">Beyond the left margin！</string>
+    <string name="outOfLine">Beyond the row space！</string>
+    <string name="outOfFont">Beyond the font size！</string>
+    <string name="outOfGray">Beyond the gray level！</string>
+    <string name="empty">The content is empty！</string>
+    <string name="lengthNotEnougth">The length is not enough！</string>
+    <string name="index_text">print text</string>
+    <string name="index_pic">picture/code</string>
+    <string name="index_comm">print command</string>
+    <string name="input_content">input content</string>
+    <string name="bl_dy">Print</string>
+    <string name="printing_wait">Printing, please wait……</string>
+    <string name="ptintInit">Printer initialing... Please try again after a few seconds.</string>
+    <string name="idcard_czz">Proceeding...</string>
+    <string name="watting">Please wait while checking driver version</string>
+    <string name="noPaper">No paper</string>
+    <string name="noPaperNotice">No paper, please put paper in and retry</string>
+    <string name="sure">sure</string>
+
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string name="next">Suivant</string>
+    <string name="skip">Ignorer</string>
+    <string name="start">Commencer</string>
+
+    <string name="slide_1_title">DIOOL</string>
+    <string name="slide_1_desc">Recharges de crédit \n  Dépôts et retraits mobile money \n
+        Tous les opérateurs!</string>
+
+    <string name="slide_2_title">DIOOL</string>
+    <string name="slide_2_desc">Lancez votre guichet \n Faites des transactions plus facilement \n  Augmentez vos gains!</string>
+
+    <string name="slide_3_title">Points de fidélité</string>
+    <string name="slide_3_desc">Gagnez des points de fidélité sur vos transactions!</string>
+
+    <string name="slide_4_title">Opérations rapides</string>
+    <string name="slide_4_desc">Accélérer vos opérations de change et de paiement!</string>
+
+
+    <string name="title_activity_slider">SliderActivity</string>
+
+
+    <string name="activity_dialog_title">Code PIN oublié?</string>
+    <string name="activity_dialog_accept">Valider</string>
+    <string name="activity_dialog_decline">Annuler</string>
+    <string name="activity_dialog_content">Tap \'OK\' to log out, when you log back in you\'ll be able to create a new Pincode.\n\nIf you remember your Pincode, tap \'Cancel\' to go back.</string>
+
+
+    <string name="loginFailedMessage">L\'identifiant ou le mot de passe que\n\nvous avez saisi est incorrect.</string>
+    <string name="disconnectAlertMessage">Êtes vous certain de vouloir\n\nvous déconnecter ?</string>
+
+
+    <string name="downloadFor">Une nouvelle mise à jour de l\'application est publiée sur le store!</string>
+    <string name="dialogPositiveButton">OK</string>
+    <string name="dialogNeutralButton">Plus tard</string>
+    <string name="dialogNegativeButton">Non, merci</string>
+    <string name="newUpdateAvailable">My Money Mobile</string>
+    <string name="title_activity_gestion_solde">GestionSoldeActivity</string>
+    <string name="title_activity_merchant_maps">Map</string>
+    <string name="title_activity_payement">PayementActivity</string>
+    <string name="title_activity_add_funds">AddFundsActivity</string>
+    <string name="title_activity_withdraw_funds">WithdrawFundsActivity</string>
+    <string name="title_activity_quote_request">Quote Request</string>
+    <string name="title_activity_transaction_request">TransactionRequestActivity</string>
+    <string name="title_activity_test_map">TestMapActivity</string>
+    <string name="title_activity_service_selection">ServiceSelectionActivity</string>
+
+
+    <string name="navigation_view_item_1">Acceuil</string>
+    <string name="navigation_view_item_2">Profile</string>
+    <string name="navigation_view_item_3">Chercher boutique</string>
+    <string name="navigation_view_item_4">Mon réseau d\'agents</string>
+    <string name="navigation_view_item_5">Relevé des transactions</string>
+    <string name="navigation_view_item_6">Navigation Item 6</string>
+    <string name="navigation_view_category_1">Navigation View Category</string>
+    <string name="navigation_view_category_2">Navigation View Category</string>
+
+
+</resources>

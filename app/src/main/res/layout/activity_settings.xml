@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".activities.SettingsActivity">
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/Switch_pdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="Non"
+            android:textOn="oui"
+            android:background="@android:color/transparent"
+            android:textColor="#009633"
+            android:button="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_saving_pdf"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:text="Sauvegarder automatiquement les détails de transactions"/>
+    </LinearLayout>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_changing_mdp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:text="Changer mot de passe"
+        android:drawableLeft="@drawable/change"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_compte"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:visibility="gone"
+        android:text="Gestion des comptes"
+        android:drawableLeft="@drawable/compte"
+        android:textColor="@android:color/black"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_profile"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:text="Profile"
+        android:drawableLeft="@drawable/profile"
+        android:textColor="@android:color/black"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_metion"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:text="Mention légale"
+        android:drawableLeft="@drawable/terms"
+        android:textColor="@android:color/black"/>
+
+
+</LinearLayout>

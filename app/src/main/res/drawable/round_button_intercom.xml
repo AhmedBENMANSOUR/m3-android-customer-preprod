@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:paddingMode="nest" >
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <gradient android:startColor="#FFFFFF"
+                android:endColor="@color/intercomsdk_main_blue"
+                android:angle="270" />
+            <corners android:radius="3dp" />
+            <stroke android:width="5px" android:color="@color/intercomsdk_main_blue" />
+        </shape>
+    </item>
+    <item  android:drawable="@drawable/intercom_bubble"  />
+</layer-list>

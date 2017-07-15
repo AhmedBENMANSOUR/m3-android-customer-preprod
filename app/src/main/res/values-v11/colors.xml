@@ -1,0 +1,8 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#FFFFFF</color>
+	<color name="orange">#ff8000</color>
+	<color name="mtn">#006e93</color>
+	<color name="nexttel">#b30000</color>
+</resources>

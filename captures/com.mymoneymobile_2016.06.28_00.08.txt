@@ -1,0 +1,238 @@
+TASK com.mymoneymobile id=1266
+  ACTIVITY com.mymoneymobile/.activities.TransactionsHistoryActivity 1097ccc0 pid=5041
+    Local FragmentActivity 2851c4ea State:
+      mCreated=truemResumed=false mStopped=true mReallyStopped=true
+      mLoadersStarted=true
+    FragmentManager misc state:
+      mHost=android.support.v4.app.FragmentActivity$HostCallbacks@19eb2845
+      mContainer=android.support.v4.app.FragmentActivity$HostCallbacks@19eb2845
+      mCurState=2 mStateSaved=true mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{19c35b9a V.E..... ... 0,0-480,800}
+        android.widget.LinearLayout{31331ccb V.E..... ... 0,0-480,800}
+          android.view.ViewStub{158b4ca8 G.E..... ... 0,0-0,0 #102041a}
+          android.widget.FrameLayout{f9b03c1 V.E..... ... 0,38-480,800}
+            android.support.v7.widget.ActionBarOverlayLayout{86b9766 V.E..... ... 0,0-480,762 #7f0e0094 app:id/decor_content_parent}
+              android.support.v7.widget.ContentFrameLayout{1cd4baa7 V.E..... ... 0,84-480,762 #1020002 android:id/content}
+                android.widget.RelativeLayout{1b9c8b54 V.E..... ... 0,0-480,678}
+                  android.widget.LinearLayout{b131afd G.E..... ... 15,15-465,263 #7f0e0110 app:id/layout_date}
+                    android.support.v7.widget.AppCompatEditText{2609c3f2 VFED..CL ... 15,15-435,75 #7f0e0111 app:id/txt_start_date}
+                    android.support.v7.widget.AppCompatEditText{2b085a43 VFED..CL ... 15,83-435,143 #7f0e0112 app:id/txt_end_date}
+                    android.support.v7.widget.AppCompatButton{30e108c0 VFED..C. ... 45,173-405,233 #7f0e0113 app:id/history_action_button}
+                  android.support.v7.widget.RecyclerView{24fb69f9 VFED.... F.. 0,0-480,678 #7f0e0114 app:id/recycler_view_transactions}
+                    android.widget.LinearLayout{8ec2d3e V.E..... ... 0,-3-480,94}
+                      android.support.v7.widget.CardView{3e4c579f V.E...C. ... 0,0-480,95 #7f0e00a7 app:id/card_view}
+                        android.widget.LinearLayout{2d2df0ec V.E..... ... 0,0-480,95 #7f0e0242 app:id/layout_parent}
+                          android.widget.RelativeLayout{3e7facb5 V.E..... ... 0,0-480,95 #7f0e0243 app:id/layout_haut}
+                            android.support.v7.widget.AppCompatTextView{bf9df4a V.ED.... ... 15,15-59,40 #7f0e0244 app:id/texView_time}
+                            android.support.v7.widget.AppCompatTextView{38a8cebb V.ED.... ... 15,40-53,61 #7f0e0245 app:id/textView_dd_mm}
+                            android.support.v7.widget.AppCompatTextView{2e7f2fd8 V.ED.... ... 15,61-47,80 #7f0e0246 app:id/textView_year}
+                            android.support.v7.widget.AppCompatImageView{25cb5f31 V.ED.... ... 74,25-119,70 #7f0e0247 app:id/imageViewProviderIcon}
+                            android.widget.LinearLayout{1f7ea616 V.E..... ... 134,15-290,75}
+                              android.support.v7.widget.AppCompatTextView{a8b9b97 V.ED.... ... 0,0-156,32 #7f0e0248 app:id/texView_transaction}
+                              android.support.v7.widget.AppCompatTextView{34a37184 V.ED.... ... 0,32-108,60 #7f0e0249 app:id/texView_amount}
+                            android.support.v7.widget.AppCompatImageView{645bd6d V.ED.... ... 442,36-465,59 #7f0e024a app:id/image_details}
+                            android.support.v7.widget.AppCompatImageView{1ab70da2 V.ED.... ... 382,25-427,70 #7f0e024b app:id/imageViewTransactionIcon}
+                          android.widget.LinearLayout{13645a33 G.E..... ... 0,0-0,0 #7f0e024c app:id/layout_bas}
+                            android.widget.LinearLayout{ba821f0 V.E..... ... 0,0-0,0 #7f0e024d app:id/layout_interne}
+                              android.support.v7.widget.AppCompatTextView{208dc369 V.ED.... ... 0,0-0,0 #7f0e024e app:id/titre_ref_interne}
+                              android.support.v7.widget.AppCompatTextView{1a1c61ee V.ED.... ... 0,0-0,0 #7f0e024f app:id/texte_ref_interne}
+                            android.widget.LinearLayout{3000668f V.E..... ... 0,0-0,0 #7f0e0250 app:id/layout_externe}
+                              android.support.v7.widget.AppCompatTextView{31056d1c V.ED.... ... 0,0-0,0 #7f0e0251 app:id/titre_ref_externe}
+                              android.support.v7.widget.AppCompatTextView{6362d25 V.ED.... ... 0,0-0,0 #7f0e0252 app:id/texte_ref_externe}
+                    android.widget.LinearLayout{3670aefa V.E..... ... 0,94-480,191}
+                      android.support.v7.widget.CardView{12a6dcab V.E...C. ... 0,0-480,95 #7f0e00a7 app:id/card_view}
+                        android.widget.LinearLayout{1f8a3f08 V.E..... ... 0,0-480,95 #7f0e0242 app:id/layout_parent}
+                          android.widget.RelativeLayout{154176a1 V.E..... ... 0,0-480,95 #7f0e0243 app:id/layout_haut}
+                            android.support.v7.widget.AppCompatTextView{208ac0c6 V.ED.... ... 15,15-59,40 #7f0e0244 app:id/texView_time}
+                            android.support.v7.widget.AppCompatTextView{f49887 V.ED.... ... 15,40-53,61 #7f0e0245 app:id/textView_dd_mm}
+                            android.support.v7.widget.AppCompatTextView{2e0843b4 V.ED.... ... 15,61-47,80 #7f0e0246 app:id/textView_year}
+                            android.support.v7.widget.AppCompatImageView{2f5ddbdd V.ED.... ... 74,25-119,70 #7f0e0247 app:id/imageViewProviderIcon}
+                            android.widget.LinearLayout{2de22352 V.E..... ... 134,15-290,75}
+                              android.support.v7.widget.AppCompatTextView{13783623 V.ED.... ... 0,0-156,32 #7f0e0248 app:id/texView_transaction}
+                              android.support.v7.widget.AppCompatTextView{2cbfe720 V.ED.... ... 0,32-86,60 #7f0e0249 app:id/texView_amount}
+                            android.support.v7.widget.AppCompatImageView{28e158d9 V.ED.... ... 442,36-465,59 #7f0e024a app:id/image_details}
+                            android.support.v7.widget.AppCompatImageView{21db229e V.ED.... ... 382,25-427,70 #7f0e024b app:id/imageViewTransactionIcon}
+                          android.widget.LinearLayout{130e117f G.E..... ... 0,0-0,0 #7f0e024c app:id/layout_bas}
+                            android.widget.LinearLayout{2d8c554c V.E..... ... 0,0-0,0 #7f0e024d app:id/layout_interne}
+                              android.support.v7.widget.AppCompatTextView{2b85a995 V.ED.... ... 0,0-0,0 #7f0e024e app:id/titre_ref_interne}
+                              android.support.v7.widget.AppCompatTextView{3fd2caaa V.ED.... ... 0,0-0,0 #7f0e024f app:id/texte_ref_interne}
+                            android.widget.LinearLayout{ffc469b V.E..... ... 0,0-0,0 #7f0e0250 app:id/layout_externe}
+                              android.support.v7.widget.AppCompatTextView{22cf7a38 V.ED.... ... 0,0-0,0 #7f0e0251 app:id/titre_ref_externe}
+                              android.support.v7.widget.AppCompatTextView{8e44a11 V.ED.... ... 0,0-0,0 #7f0e0252 app:id/texte_ref_externe}
+                    android.widget.LinearLayout{31eae776 V.E..... ... 0,191-480,288}
+                      android.support.v7.widget.CardView{eceb177 V.E...C. ... 0,0-480,95 #7f0e00a7 app:id/card_view}
+                        android.widget.LinearLayout{11e01e4 V.E..... ... 0,0-480,95 #7f0e0242 app:id/layout_parent}
+                          android.widget.RelativeLayout{38b2764d V.E..... ... 0,0-480,95 #7f0e0243 app:id/layout_haut}
+                            android.support.v7.widget.AppCompatTextView{10960502 V.ED.... ... 15,15-59,40 #7f0e0244 app:id/texView_time}
+                            android.support.v7.widget.AppCompatTextView{26f2ee13 V.ED.... ... 15,40-53,61 #7f0e0245 app:id/textView_dd_mm}
+                            android.support.v7.widget.AppCompatTextView{fab5850 V.ED.... ... 15,61-47,80 #7f0e0246 app:id/textView_year}
+                            android.support.v7.widget.AppCompatImageView{3ebd2a49 V.ED.... ... 74,25-119,70 #7f0e0247 app:id/imageViewProviderIcon}
+                            android.widget.LinearLayout{16e36f4e V.E..... ... 134,15-290,75}
+                              android.support.v7.widget.AppCompatTextView{2f14586f V.ED.... ... 0,0-156,32 #7f0e0248 app:id/texView_transaction}
+                              android.support.v7.widget.AppCompatTextView{1375a97c V.ED.... ... 0,32-86,60 #7f0e0249 app:id/texView_amount}
+                            android.support.v7.widget.AppCompatImageView{34a52205 V.ED.... ... 442,36-465,59 #7f0e024a app:id/image_details}
+                            android.support.v7.widget.AppCompatImageView{f8b325a V.ED.... ... 382,25-427,70 #7f0e024b app:id/imageViewTransactionIcon}
+                          android.widget.LinearLayout{13380c8b G.E..... ... 0,0-0,0 #7f0e024c app:id/layout_bas}
+                            android.widget.LinearLayout{131e168 V.E..... ... 0,0-0,0 #7f0e024d app:id/layout_interne}
+                              android.support.v7.widget.AppCompatTextView{335ad981 V.ED.... ... 0,0-0,0 #7f0e024e app:id/titre_ref_interne}
+                              android.support.v7.widget.AppCompatTextView{6ba1a26 V.ED.... ... 0,0-0,0 #7f0e024f app:id/texte_ref_interne}
+                            android.widget.LinearLayout{3098e667 V.E..... ... 0,0-0,0 #7f0e0250 app:id/layout_externe}
+                              android.support.v7.widget.AppCompatTextView{21f7ac14 V.ED.... ... 0,0-0,0 #7f0e0251 app:id/titre_ref_externe}
+                              android.support.v7.widget.AppCompatTextView{185a8cbd V.ED.... ... 0,0-0,0 #7f0e0252 app:id/texte_ref_externe}
+                    android.widget.LinearLayout{c9db2b2 V.E..... ... 0,288-480,385}
+                      android.support.v7.widget.CardView{13438203 V.E...C. ... 0,0-480,95 #7f0e00a7 app:id/card_view}
+                        android.widget.LinearLayout{16ad7580 V.E..... ... 0,0-480,95 #7f0e0242 app:id/layout_parent}
+                          android.widget.RelativeLayout{22a837b9 V.E..... ... 0,0-480,95 #7f0e0243 app:id/layout_haut}
+                            android.support.v7.widget.AppCompatTextView{14b047fe V.ED.... ... 15,15-59,40 #7f0e0244 app:id/texView_time}
+                            android.support.v7.widget.AppCompatTextView{31723b5f V.ED.... ... 15,40-53,61 #7f0e0245 app:id/textView_dd_mm}
+                            android.support.v7.widget.AppCompatTextView{263469ac V.ED.... ... 15,61-47,80 #7f0e0246 app:id/textView_year}
+                            android.support.v7.widget.AppCompatImageView{238b9675 V.ED.... ... 74,25-119,70 #7f0e0247 app:id/imageViewProviderIcon}
+                            android.widget.LinearLayout{3dc4e60a V.E..... ... 134,15-290,75}
+                              android.support.v7.widget.AppCompatTextView{a92e7b V.ED.... ... 0,0-156,32 #7f0e0248 app:id/texView_transaction}
+                              android.support.v7.widget.AppCompatTextView{2547498 V.ED.... ... 0,32-75,60 #7f0e0249 app:id/texView_amount}
+                            android.support.v7.widget.AppCompatImageView{3f0c24f1 V.ED.... ... 442,36-465,59 #7f0e024a app:id/image_details}
+                            android.support.v7.widget.AppCompatImageView{ed358d6 V.ED.... ... 382,25-427,70 #7f0e024b app:id/imageViewTransactionIcon}
+                          android.widget.LinearLayout{923757 G.E..... ... 0,0-0,0 #7f0e024c app:id/layout_bas}
+                            android.widget.LinearLayout{2f684244 V.E..... ... 0,0-0,0 #7f0e024d app:id/layout_interne}
+                              android.support.v7.widget.AppCompatTextView{382d1f2d V.ED.... ... 0,0-0,0 #7f0e024e app:id/titre_ref_interne}
+                              android.support.v7.widget.AppCompatTextView{34842c62 V.ED.... ... 0,0-0,0 #7f0e024f app:id/texte_ref_interne}
+                            android.widget.LinearLayout{1798f1f3 V.E..... ... 0,0-0,0 #7f0e0250 app:id/layout_externe}
+                              android.support.v7.widget.AppCompatTextView{3ac93eb0 V.ED.... ... 0,0-0,0 #7f0e0251 app:id/titre_ref_externe}
+                              android.support.v7.widget.AppCompatTextView{4e98129 V.ED.... ... 0,0-0,0 #7f0e0252 app:id/texte_ref_externe}
+                    android.widget.LinearLayout{b7cacae V.E..... ... 0,385-480,482}
+                      android.support.v7.widget.CardView{1d46ba4f V.E...C. ... 0,0-480,95 #7f0e00a7 app:id/card_view}
+                        android.widget.LinearLayout{2bfb95dc V.E..... ... 0,0-480,95 #7f0e0242 app:id/layout_parent}
+                          android.widget.RelativeLayout{25f006e5 V.E..... ... 0,0-480,95 #7f0e0243 app:id/layout_haut}
+                            android.support.v7.widget.AppCompatTextView{36ae5ba V.ED.... ... 15,15-59,40 #7f0e0244 app:id/texView_time}
+                            android.support.v7.widget.AppCompatTextView{2e5eac6b V.ED.... ... 15,40-53,61 #7f0e0245 app:id/textView_dd_mm}
+                            android.support.v7.widget.AppCompatTextView{1c9a33c8 V.ED.... ... 15,61-47,80 #7f0e0246 app:id/textView_year}
+                            android.support.v7.widget.AppCompatImageView{3e1f2c61 V.ED.... ... 74,25-119,70 #7f0e0247 app:id/imageViewProviderIcon}
+                            android.widget.LinearLayout{26d1a386 V.E..... ... 134,15-290,75}
+                              android.support.v7.widget.AppCompatTextView{26b9a447 V.ED.... ... 0,0-156,32 #7f0e0248 app:id/texView_transaction}
+                              android.support.v7.widget.AppCompatTextView{2302c474 V.ED.... ... 0,32-75,60 #7f0e0249 app:id/texView_amount}
+                            android.support.v7.widget.AppCompatImageView{25c12d9d V.ED.... ... 442,36-465,59 #7f0e024a app:id/image_details}
+                            android.support.v7.widget.AppCompatImageView{13947212 V.ED.... ... 382,25-427,70 #7f0e024b app:id/imageViewTransactionIcon}
+                          android.widget.LinearLayout{1ce23de3 G.E..... ... 0,0-0,0 #7f0e024c app:id/layout_bas}
+                            android.widget.LinearLayout{3bc1b3e0 V.E..... ... 0,0-0,0 #7f0e024d app:id/layout_interne}
+                              android.support.v7.widget.AppCompatTextView{35880699 V.ED.... ... 0,0-0,0 #7f0e024e app:id/titre_ref_interne}
+                              android.support.v7.widget.AppCompatTextView{30439d5e V.ED.... ... 0,0-0,0 #7f0e024f app:id/texte_ref_interne}
+                            android.widget.LinearLayout{3b70d53f V.E..... ... 0,0-0,0 #7f0e0250 app:id/layout_externe}
+                              android.support.v7.widget.AppCompatTextView{1dbe2e0c V.ED.... ... 0,0-0,0 #7f0e0251 app:id/titre_ref_externe}
+                              android.support.v7.widget.AppCompatTextView{5497355 V.ED.... ... 0,0-0,0 #7f0e0252 app:id/texte_ref_externe}
+                    android.widget.LinearLayout{2a28316a V.E..... ... 0,482-480,579}
+                      android.support.v7.widget.CardView{1427865b V.E...C. ... 0,0-480,95 #7f0e00a7 app:id/card_view}
+                        android.widget.LinearLayout{25261ef8 V.E..... ... 0,0-480,95 #7f0e0242 app:id/layout_parent}
+                          android.widget.RelativeLayout{1a7aefd1 V.E..... ... 0,0-480,95 #7f0e0243 app:id/layout_haut}
+                            android.support.v7.widget.AppCompatTextView{80ffa36 V.ED.... ... 15,15-59,40 #7f0e0244 app:id/texView_time}
+                            android.support.v7.widget.AppCompatTextView{8ce2d37 V.ED.... ... 15,40-53,61 #7f0e0245 app:id/textView_dd_mm}
+                            android.support.v7.widget.AppCompatTextView{11a32a4 V.ED.... ... 15,61-47,80 #7f0e0246 app:id/textView_year}
+                            android.support.v7.widget.AppCompatImageView{26db80d V.ED.... ... 74,25-119,70 #7f0e0247 app:id/imageViewProviderIcon}
+                            android.widget.LinearLayout{1dd983c2 V.E..... ... 134,15-290,75}
+                              android.support.v7.widget.AppCompatTextView{25ce65d3 V.ED.... ... 0,0-156,32 #7f0e0248 app:id/texView_transaction}
+                              android.support.v7.widget.AppCompatTextView{1019d510 V.ED.... ... 0,32-75,60 #7f0e0249 app:id/texView_amount}
+                            android.support.v7.widget.AppCompatImageView{144ac809 V.ED.... ... 442,36-465,59 #7f0e024a app:id/image_details}
+                            android.support.v7.widget.AppCompatImageView{2cc01a0e V.ED.... ... 382,25-427,70 #7f0e024b app:id/imageViewTransactionIcon}
+                          android.widget.LinearLayout{a8f8c2f G.E..... ... 0,0-0,0 #7f0e024c app:id/layout_bas}
+                            android.widget.LinearLayout{172f323c V.E..... ... 0,0-0,0 #7f0e024d app:id/layout_interne}
+                              android.support.v7.widget.AppCompatTextView{16cedbc5 V.ED.... ... 0,0-0,0 #7f0e024e app:id/titre_ref_interne}
+                              android.support.v7.widget.AppCompatTextView{3c67c91a V.ED.... ... 0,0-0,0 #7f0e024f app:id/texte_ref_interne}
+                            android.widget.LinearLayout{3b92bc4b V.E..... ... 0,0-0,0 #7f0e0250 app:id/layout_externe}
+                              android.support.v7.widget.AppCompatTextView{3fdb3628 V.ED.... ... 0,0-0,0 #7f0e0251 app:id/titre_ref_externe}
+                              android.support.v7.widget.AppCompatTextView{5c66f41 V.ED.... ... 0,0-0,0 #7f0e0252 app:id/texte_ref_externe}
+                    android.widget.LinearLayout{38a95ce6 V.E..... ... 0,579-480,676}
+                      android.support.v7.widget.CardView{3a4ed227 V.E...C. ... 0,0-480,95 #7f0e00a7 app:id/card_view}
+                        android.widget.LinearLayout{8c18cd4 V.E..... ... 0,0-480,95 #7f0e0242 app:id/layout_parent}
+                          android.widget.RelativeLayout{3349be7d V.E..... ... 0,0-480,95 #7f0e0243 app:id/layout_haut}
+                            android.support.v7.widget.AppCompatTextView{201e6172 V.ED.... ... 15,15-59,40 #7f0e0244 app:id/texView_time}
+                            android.support.v7.widget.AppCompatTextView{3ecc69c3 V.ED.... ... 15,40-53,61 #7f0e0245 app:id/textView_dd_mm}
+                            android.support.v7.widget.AppCompatTextView{1514a240 V.ED.... ... 15,61-47,80 #7f0e0246 app:id/textView_year}
+                            android.support.v7.widget.AppCompatImageView{b8c579 V.ED.... ... 74,25-119,70 #7f0e0247 app:id/imageViewProviderIcon}
+                            android.widget.LinearLayout{f6d22be V.E..... ... 134,15-290,75}
+                              android.support.v7.widget.AppCompatTextView{2f01df1f V.ED.... ... 0,0-156,32 #7f0e0248 app:id/texView_transaction}
+                              android.support.v7.widget.AppCompatTextView{6c1a26c V.ED.... ... 0,32-75,60 #7f0e0249 app:id/texView_amount}
+                            android.support.v7.widget.AppCompatImageView{2b774035 V.ED.... ... 442,36-465,59 #7f0e024a app:id/image_details}
+                            android.support.v7.widget.AppCompatImageView{3554acca V.ED.... ... 382,25-427,70 #7f0e024b app:id/imageViewTransactionIcon}
+                          android.widget.LinearLayout{2fef4e3b G.E..... ... 0,0-0,0 #7f0e024c app:id/layout_bas}
+                            android.widget.LinearLayout{f5c7958 V.E..... ... 0,0-0,0 #7f0e024d app:id/layout_interne}
+                              android.support.v7.widget.AppCompatTextView{2968aab1 V.ED.... ... 0,0-0,0 #7f0e024e app:id/titre_ref_interne}
+                              android.support.v7.widget.AppCompatTextView{3b78cb96 V.ED.... ... 0,0-0,0 #7f0e024f app:id/texte_ref_interne}
+                            android.widget.LinearLayout{2c7a9317 V.E..... ... 0,0-0,0 #7f0e0250 app:id/layout_externe}
+                              android.support.v7.widget.AppCompatTextView{23cbd304 V.ED.... ... 0,0-0,0 #7f0e0251 app:id/titre_ref_externe}
+                              android.support.v7.widget.AppCompatTextView{112c40ed V.ED.... ... 0,0-0,0 #7f0e0252 app:id/texte_ref_externe}
+                    android.widget.LinearLayout{2fee0b22 V.E..... ... 0,676-480,773}
+                      android.support.v7.widget.CardView{2e0b49b3 V.E...C. ... 0,0-480,95 #7f0e00a7 app:id/card_view}
+                        android.widget.LinearLayout{3eb51b70 V.E..... ... 0,0-480,95 #7f0e0242 app:id/layout_parent}
+                          android.widget.RelativeLayout{a18fee9 V.E..... ... 0,0-480,95 #7f0e0243 app:id/layout_haut}
+                            android.support.v7.widget.AppCompatTextView{3b85b76e V.ED.... ... 15,15-59,40 #7f0e0244 app:id/texView_time}
+                            android.support.v7.widget.AppCompatTextView{22e6ce0f V.ED.... ... 15,40-53,61 #7f0e0245 app:id/textView_dd_mm}
+                            android.support.v7.widget.AppCompatTextView{1da87e9c V.ED.... ... 15,61-47,80 #7f0e0246 app:id/textView_year}
+                            android.support.v7.widget.AppCompatImageView{3ff9a0a5 V.ED.... ... 74,25-119,70 #7f0e0247 app:id/imageViewProviderIcon}
+                            android.widget.LinearLayout{30d9dc7a V.E..... ... 134,15-290,75}
+                              android.support.v7.widget.AppCompatTextView{2e4c3c2b V.ED.... ... 0,0-156,32 #7f0e0248 app:id/texView_transaction}
+                              android.support.v7.widget.AppCompatTextView{250ce888 V.ED.... ... 0,32-64,60 #7f0e0249 app:id/texView_amount}
+                            android.support.v7.widget.AppCompatImageView{1688a221 V.ED.... ... 442,36-465,59 #7f0e024a app:id/image_details}
+                            android.support.v7.widget.AppCompatImageView{194646 V.ED.... ... 382,25-427,70 #7f0e024b app:id/imageViewTransactionIcon}
+                          android.widget.LinearLayout{1e507007 G.E..... ... 0,0-0,0 #7f0e024c app:id/layout_bas}
+                            android.widget.LinearLayout{16cc0534 V.E..... ... 0,0-0,0 #7f0e024d app:id/layout_interne}
+                              android.support.v7.widget.AppCompatTextView{18ac3f5d V.ED.... ... 0,0-0,0 #7f0e024e app:id/titre_ref_interne}
+                              android.support.v7.widget.AppCompatTextView{1b9380d2 V.ED.... ... 0,0-0,0 #7f0e024f app:id/texte_ref_interne}
+                            android.widget.LinearLayout{237a05a3 G.E..... ... 0,0-0,0 #7f0e0250 app:id/layout_externe}
+                              android.support.v7.widget.AppCompatTextView{7be40a0 V.ED.... ... 0,0-0,0 #7f0e0251 app:id/titre_ref_externe}
+                              android.support.v7.widget.AppCompatTextView{1f727459 V.ED.... ... 0,0-0,0 #7f0e0252 app:id/texte_ref_externe}
+                  android.support.v7.widget.AppCompatTextView{1904d81e G.ED.... ... 0,0-0,0 #7f0e0115 app:id/text_empty}
+              android.support.v7.widget.ActionBarContainer{261d58ff V.ED.... ... 0,0-480,84 #7f0e0095 app:id/action_bar_container}
+                android.support.v7.widget.Toolbar{3fd6c6cc V.E..... ... 0,0-480,84 #7f0e0096 app:id/action_bar}
+                  android.widget.TextView{2cccfd15 V.ED.... ... 24,21-199,62}
+                  android.support.v7.widget.ActionMenuView{1ba2582a V.E..... ... 264,0-480,84}
+                    android.support.v7.view.menu.ActionMenuItemView{1578861b VFED..CL ... 0,6-72,78 #7f0e0297 app:id/send_file}
+                    android.support.v7.view.menu.ActionMenuItemView{310f83b8 VFED..CL ... 72,6-144,78 #7f0e0298 app:id/save}
+                    android.support.v7.view.menu.ActionMenuItemView{360d5591 VFED..CL ... 144,6-216,78 #7f0e0299 app:id/select_date}
+                android.support.v7.widget.ActionBarContextView{12e5ccf6 G.E..... ... 0,0-0,0 #7f0e0097 app:id/action_context_bar}
+
+  ACTIVITY com.mymoneymobile/.activities.ServiceSelectionMerchantActivity 1a655f90 pid=5041
+    Local FragmentActivity 4c8945b State:
+      mCreated=truemResumed=false mStopped=true mReallyStopped=true
+      mLoadersStarted=true
+    FragmentManager misc state:
+      mHost=android.support.v4.app.FragmentActivity$HostCallbacks@c8f68f7
+      mContainer=android.support.v4.app.FragmentActivity$HostCallbacks@c8f68f7
+      mCurState=2 mStateSaved=true mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{31152364 I.E..... ... 0,0-480,800}
+        android.widget.LinearLayout{1a20b9cd V.E..... ... 0,0-480,800}
+          android.view.ViewStub{1a19c282 G.E..... ... 0,0-0,0 #102041a}
+          android.widget.FrameLayout{28c79d93 V.E..... ... 0,38-480,800}
+            android.support.v7.widget.ActionBarOverlayLayout{21b311d0 V.E..... ... 0,0-480,762 #7f0e0094 app:id/decor_content_parent}
+              android.support.v7.widget.ContentFrameLayout{3f8c25c9 V.E..... ... 0,84-480,762 #1020002 android:id/content}
+                android.widget.ScrollView{4a584ce VFED.V.. ... 0,0-480,678 #7f0e00a5 app:id/fullscreen_content}
+                  android.widget.LinearLayout{2e447fef V.E..... ... 0,0-480,764 #7f0e00c1 app:id/fullscreen_content_controls}
+                    android.support.v7.widget.CardView{33ff7afc V.E..... ... 0,15-480,117 #7f0e00a7 app:id/card_view}
+                      android.widget.LinearLayout{16285585 V.E..... ... 0,0-480,102}
+                        android.widget.LinearLayout{23191fda V.E..... ... 15,15-285,73}
+                          android.widget.LinearLayout{16032c0b V.E..... ... 30,0-237,29 #7f0e00a8 app:id/layout_balance}
+                            android.support.v7.widget.AppCompatTextView{32474ae8 V.ED.... ... 0,0-70,29 #7f0e00a9 app:id/textView_da_balance_label}
+                            android.support.v7.widget.AppCompatTextView{389dc501 V.ED.... ... 70,0-160,29 #7f0e00aa app:id/textView_da_balance}
+                            android.support.v7.widget.AppCompatTextView{cf95fa6 V.ED.... ... 168,0-207,29}
+                          android.widget.LinearLayout{21b67de7 V.E..... ... 30,29-229,58 #7f0e00ab app:id/layout_revenue}
+                            android.support.v7.widget.AppCompatTextView{3cba2d94 V.ED.... ... 0,0-86,29 #7f0e00ac app:id/textView_rev_balance_label}
+                            android.support.v7.widget.AppCompatTextView{29a0b03d V.ED.... ... 86,0-152,29 #7f0e00ad app:id/textView_rev_balance}
+                            android.support.v7.widget.AppCompatTextView{3b4bd032 V.ED.... ... 160,0-199,29}
+                        android.widget.LinearLayout{11631183 V.E..... ... 285,15-465,87 #7f0e00b0 app:id/layout_redeem}
+                          android.support.v7.widget.AppCompatButton{24d68f00 VFED..C. ... 17,0-163,72 #7f0e00b1 app:id/buttonRedeem}
+                    android.support.v7.widget.AppCompatTextView{28ed1339 V.ED.... ... 106,132-390,169 #7f0e00c7 app:id/messageLogin}
+                    android.support.v7.widget.AppCompatButton{3fe2bd7e VFED..C. ... 38,207-442,297 #7f0e0102 app:id/airtimebutton}
+                    android.support.v7.widget.AppCompatButton{16bb42df VFED..C. ... 38,320-442,410 #7f0e0103 app:id/cashinbutton}
+                    android.support.v7.widget.AppCompatButton{13959b2c VFED..C. ... 38,433-442,523 #7f0e0104 app:id/cashoutbutton}
+                    android.support.v7.widget.AppCompatButton{1c02a9f5 VFED..C. ... 38,546-442,636 #7f0e0105 app:id/transfert_diool_button}
+                    android.support.v7.widget.AppCompatButton{2569338a GFED..C. ... 0,0-0,0 #7f0e0106 app:id/paymentbutton}
+                    android.support.v7.widget.AppCompatButton{223b2dfb VFED..C. ... 38,659-442,749 #7f0e0107 app:id/history_button}
+              android.support.v7.widget.ActionBarContainer{26573e18 V.ED.... ... 0,0-480,84 #7f0e0095 app:id/action_bar_container}
+                android.support.v7.widget.Toolbar{6a0f071 V.E..... ... 0,0-480,84 #7f0e0096 app:id/action_bar}
+                  android.support.v7.widget.ActionMenuView{42efe56 V.E..... ... 120,0-480,84}
+                    android.support.v7.view.menu.ActionMenuItemView{2604aed7 VFED..CL ... 0,6-72,78 #7f0e0293 app:id/share}
+                    android.support.v7.view.menu.ActionMenuItemView{2e8e23c4 VFED..CL ... 72,6-144,78 #7f0e0294 app:id/refresh}
+                    android.support.v7.view.menu.ActionMenuItemView{f0322ad VFED..CL ... 144,6-216,78 #7f0e0295 app:id/intercom}
+                    android.support.v7.view.menu.ActionMenuItemView{17b4a9e2 VFED..CL ... 216,6-288,78 #7f0e0237 app:id/settings}
+                    android.support.v7.view.menu.ActionMenuItemView{2a7b6173 VFED..CL ... 288,6-360,78 #7f0e0296 app:id/logout}
+                android.support.v7.widget.ActionBarContextView{2bb830 G.E..... ... 0,0-0,0 #7f0e0097 app:id/action_context_bar}

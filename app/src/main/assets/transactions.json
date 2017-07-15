@@ -1,0 +1,86 @@
+[
+  {
+    "operation_type": "cashin",
+    "receiver": "237258741369",
+    "provider": "OCM",
+    "amount": "200",
+    "date": "Mon, 22 Feb 2010 00:00:00 UTC"
+  },
+  {
+    "operation_type": "cashout",
+    "receiver": "237258741369",
+    "provider": "MTNC",
+    "amount": "300",
+    "date": "Mon, 22 Feb 2010 00:00:00 UTC"
+  },
+  {
+    "operation_type": "cashin",
+    "receiver": "237258741369",
+    "provider": "NXTL",
+    "amount": "25000",
+    "date": "Mon, 22 Feb 2010 00:00:00 UTC"
+  },
+  {
+    "operation_type": "airtime",
+    "receiver": "237258741369",
+    "provider": "OCM",
+    "amount": "90000",
+    "date": "Mon, 22 Feb 2010 00:00:00 UTC"
+  },
+  {
+    "operation_type": "cashin",
+    "receiver": "237258741369",
+    "provider": "OCM",
+    "amount": "200",
+    "date": "Mon, 22 Feb 2010 00:00:00 UTC"
+  },
+  {
+    "operation_type": "cashout",
+    "receiver": "237258741369",
+    "provider": "MTNC",
+    "amount": "300",
+    "date": "Mon, 22 Feb 2010 00:00:00 UTC"
+  },
+  {
+    "operation_type": "cashin",
+    "receiver": "237258741369",
+    "provider": "NXTL",
+    "amount": "25000",
+    "date": "Mon, 22 Feb 2010 00:00:00 UTC"
+  },
+  {
+    "operation_type": "airtime",
+    "receiver": "237258741369",
+    "provider": "OCM",
+    "amount": "90000",
+    "date": "Mon, 22 Feb 2010 00:00:00 UTC"
+  },
+  {
+    "operation_type": "cashin",
+    "receiver": "237258741369",
+    "provider": "OCM",
+    "amount": "200",
+    "date": "Mon, 22 Feb 2010 00:00:00 UTC"
+  },
+  {
+    "operation_type": "cashout",
+    "receiver": "237258741369",
+    "provider": "MTNC",
+    "amount": "300",
+    "date": "Mon, 22 Feb 2010 00:00:00 UTC"
+  },
+  {
+    "operation_type": "cashin",
+    "receiver": "237258741369",
+    "provider": "NXTL",
+    "amount": "25000",
+    "date": "Mon, 22 Feb 2010 00:00:00 UTC"
+  },
+  {
+    "operation_type": "airtime",
+    "receiver": "237258741369",
+    "provider": "OCM",
+    "amount": "90000",
+    "date": "Mon, 22 Feb 2010 00:00:00 UTC"
+  }
+]

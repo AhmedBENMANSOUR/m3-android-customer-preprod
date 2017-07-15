@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/layout_id"
+    tools:context="com.dioolcustomer.activities.UserProfileActivity">
+
+    <ImageView
+        android:id="@+id/image_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/fond_image"
+        android:padding="10dp"
+        android:src="@drawable/image_defaut"/>
+
+
+
+    <!--app:layout_anchorGravity="bottom"-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_profile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:text="Informations générales"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btnmauve"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/lastname_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:hint="Nom"
+                android:inputType="text"/>
+
+
+            <TextView
+                android:id="@+id/firstname_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:hint="Prénom"
+                android:inputType="text" />
+
+
+            <TextView
+                android:id="@+id/num_identification_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:hint="Numéro d'identification"
+                android:inputType="text" />
+            <TextView
+                android:id="@+id/type_identification_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:hint="Type d'identification"
+                android:inputType="text" />
+            <TextView
+                android:id="@+id/validate_identitie_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:hint="Validité d'identité"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/profil_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:hint="Profile"
+                android:inputType="text" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:text="Informations professionnelles"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btnmauve"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/nom_boutique_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:hint="Nom de la boutique"
+                android:inputType="text" />
+
+
+
+
+            <TextView
+                android:id="@+id/nom_entreprise_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:hint="Nom de l'entreprise"
+                android:inputType="text" />
+            <TextView
+                android:id="@+id/businesregistration_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:hint="Registre de commerce"
+                android:inputType="text" />
+            <TextView
+                android:id="@+id/taxcard_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:hint="Carte de Contribuable"
+                android:inputType="text" />
+            <TextView
+                android:id="@+id/adresse_entreprise_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:hint="Adresse de l'entreprise"
+                android:inputType="text" />
+            <TextView
+                android:id="@+id/city_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:hint="Ville"
+                android:inputType="text" />
+            <TextView
+                android:id="@+id/country_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:hint="Pays"
+                android:inputType="text" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:text="Coordonnées de l'utilisateur"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btnmauve"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/phone_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:hint="Téléphone"
+                android:inputType="number" />
+
+
+
+
+
+
+
+
+
+            <!-- <Button
+                 android:id="@+id/update_action_button"
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_marginTop="10dip"
+                 android:textStyle="normal|bold|italic"
+                 android:background="@drawable/btnmauve"
+                 android:text="Valider"
+                 android:textColor="@color/white" />-->
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_account_balance_black_24dp"
+        app:layout_anchorGravity="bottom|left|end"/>-->
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_change_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_shopping_cart_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:elevation="4dp"
+        app:layout_anchorGravity="start"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dioolcustomer"
+    android:versionCode="7"
+    android:versionName="3.0.2">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Automate Digits SMS reading -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- Access Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="com.dioolcustomer.MyMoneyMobileApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name="com.dioolcustomer.activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.dioolcustomer.activities.ServiceSelectionMerchantActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.AirtimeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.CashinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.CashoutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.PaymentActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.SignupActivity"
+            android:label="@string/title_activity_signup"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.airbnb.deeplinkdispatch.DeepLinkActivity"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="signup.mymoneymobile.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jumio.netverify.sdk.activity.NetverifyActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:theme="@style/Theme.Netverify" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0181d583329335d448fcef9858ff40471eef762a" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <!--
+            <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        -->
+
+        <activity
+            android:name="com.dioolcustomer.activities.TransactionsHistoryActivity"
+            android:label="@string/title_activity_transactions"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <!-- Auth0 Lock -->
+        <activity
+            android:name="com.auth0.lock.LockActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Lock.Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/auth_client_DOMAIN"
+                    android:scheme="@string/auth_client_ID" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.auth0.lock.client-id"
+            android:value="@string/auth_client_ID" />
+        <meta-data
+            android:name="com.auth0.lock.domain-url"
+            android:value="@string/auth_client_DOMAIN" />
+        <!-- Auth0 Lock End -->
+
+        <activity
+            android:name=".activities.AuthActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/auth_client_DOMAIN"
+                    android:scheme="@string/auth_client_ID" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dioolcustomer.activities.ResetPasswordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dioolcustomer.activities.SettingsActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.TutorialActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.dioolcustomer.activities.CustomPinActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.dioolcustomer.activities.TransfertSoldeDioolActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.GestionCompteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.GestionSoldeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.RedeemHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.UserProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+
+        <!--
+        <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBSrMq-DqmLee9pYuzI26o0pVBwpuA-I0I" />
+        -->
+
+        <activity
+            android:name="com.dioolcustomer.activities.ListNetworkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.AddFundsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.WithdrawFundsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.QuoteRequestActivity"
+            android:label="@string/title_activity_quote_request"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" /> <!-- </activity> -->
+        <activity
+            android:name="com.dioolcustomer.activities.TransactionRequestActivity"
+            android:label="@string/title_activity_transaction_request"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBSrMq-DqmLee9pYuzI26o0pVBwpuA-I0I" />
+
+        <activity
+            android:name="com.dioolcustomer.activities.TestMapActivity"
+            android:label="@string/title_activity_test_map"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.MairchentAirtimeQuoteRequestActivity"
+            android:label="@string/title_activity_quote_request"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.dioolcustomer.activities.ServiceSelectionActivity"
+            android:label="@string/title_activity_service_selection"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+
+    <!-- android:theme="@style/nLiveoDrawer"-->
+    </application>
+
+</manifest>

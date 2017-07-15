@@ -1,0 +1,213 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignupFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="56dp">
+
+
+            <TextView
+                android:id="@+id/text_view_title_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/ic_launcher" />
+
+
+            <EditText
+                android:id="@+id/editTextLastNameSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:ems="10"
+                android:hint="Nom"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextNameSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Prénom"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextEmailSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/payment_msisdn_prefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:text="@string/number_prefix" />
+
+                <EditText
+                    android:id="@+id/editTextPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="@integer/number_length"
+                    android:hint="@string/number_hint"
+                    android:inputType="phone"
+                    android:maxLength="@integer/number_length" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/editTextPasswordSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Mot de passe"
+                android:inputType="text" />
+
+            <CheckBox
+                android:id="@+id/checkbox_show_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/show_password_check_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Minimum 5 caractères incluant: une lettre majuscule, une lettre minuscule et un numéro"
+                android:text="" />
+
+            <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:ems="10"-->
+            <!--android:id="@+id/editTextPassword2Signup"-->
+            <!--android:hint="Confirmer mot de passe" />-->
+
+            <EditText
+                android:id="@+id/editTextIdCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Numéro Carte d&apos;identité"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextExpIDCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Date d&apos;expiration CNI"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextBusinessName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom de la boutique"
+                android:inputType="text" />
+            <LinearLayout
+                android:id="@+id/layout_subdistributor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subdistributor"
+                    android:textSize="18sp"
+                    android:textColor="@color/gray_form"
+                    android:layout_marginRight="10dp"/>
+                <Spinner
+                    android:id="@+id/subdists_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ></Spinner>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextNumRegistration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numéro de RCCM"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextTax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numéro de Contribuable"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextCityArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="Quartier"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextCityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ville"
+                android:inputType="text" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cgu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cgu_check_text" />
+
+            <TextView
+                android:id="@+id/textView_CGU_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_signup_user"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp"
+                android:padding="12dp"
+                android:text="Créer mon compte" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--android:checked="true"-->
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/navigation_item_1"
+            android:icon="@drawable/home_normal"
+            android:title="@string/navigation_view_item_1"
+            android:checked="true"/>
+        <item
+            android:id="@+id/navigation_item_2"
+
+            android:icon="@drawable/profile"
+            android:title="@string/navigation_view_item_2" />
+
+        <item
+            android:id="@+id/navigation_item_3"
+            android:icon="@drawable/com_auth0_social_icon_shopify"
+            android:title="@string/navigation_view_item_3" />
+        <item
+            android:id="@+id/navigation_item_4"
+            android:icon="@drawable/network"
+            android:title="@string/navigation_view_item_4" />
+        <item
+            android:id="@+id/navigation_item_5"
+            android:icon="@drawable/histo48"
+            android:title="@string/navigation_view_item_5" />
+    </group>
+
+ <!--  <item
+        android:id="@+id/navigation_view_category_2"
+        android:title="@string/navigation_view_category_2">
+        <menu>
+            <item
+                android:id="@+id/navigation_item_3"
+                android:icon="@drawable/ic_launcher"
+                android:title="@string/navigation_view_item_3" />
+            <item
+                android:id="@+id/navigation_item_4"
+                android:icon="@drawable/ic_launcher"
+                android:title="@string/navigation_view_item_4" />
+            <item
+                android:id="@+id/navigation_item_5"
+                android:icon="@drawable/ic_launcher"
+                android:title="@string/navigation_view_item_5" />
+        </menu>
+    </item>-->
+</menu>

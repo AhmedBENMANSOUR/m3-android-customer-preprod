@@ -1,0 +1,84 @@
+TASK com.mymoneymobile id=242
+  ACTIVITY com.mymoneymobile/.SignupActivity 18b4bcf1 pid=2424
+    Local FragmentActivity e715d3e State:
+      mCreated=truemResumed=true mStopped=false mReallyStopped=false
+      mLoadersStarted=true
+    Active Fragments in 24474585:
+      #0: SignupVerificationFragment{33654fda #0 id=0x7f0c00ae}
+        mFragmentId=#7f0c00ae mContainerId=#7f0c00ae mTag=null
+        mState=5 mIndex=0 mWho=android:fragment:0 mBackStackNesting=0
+        mAdded=true mRemoving=false mResumed=true mFromLayout=false mInLayout=false
+        mHidden=false mDetached=false mMenuVisible=true mHasMenu=false
+        mRetainInstance=false mRetaining=false mUserVisibleHint=true
+        mFragmentManager=FragmentManager{24474585 in SignupActivity{e715d3e}}
+        mActivity=com.mymoneymobile.activities.SignupActivity@e715d3e
+        mArguments=Bundle[{}]
+        mContainer=android.widget.FrameLayout{1d139c0b V.E..... ........ 0,0-1080,1677 #7f0c00ae app:id/fragment_signup_container}
+        mView=android.widget.LinearLayout{1666fae8 V.E..... ........ 0,0-1080,1677}
+        mInnerView=android.widget.LinearLayout{1666fae8 V.E..... ........ 0,0-1080,1677}
+        Child FragmentManager{21bbb501 in SignupVerificationFragment{33654fda}}:
+          FragmentManager misc state:
+            mActivity=com.mymoneymobile.activities.SignupActivity@e715d3e
+            mContainer=android.support.v4.app.Fragment$1@dd88fa6
+            mParent=SignupVerificationFragment{33654fda #0 id=0x7f0c00ae}
+            mCurState=5 mStateSaved=false mDestroyed=false
+    Added Fragments:
+      #0: SignupVerificationFragment{33654fda #0 id=0x7f0c00ae}
+    FragmentManager misc state:
+      mActivity=com.mymoneymobile.activities.SignupActivity@e715d3e
+      mContainer=android.support.v4.app.FragmentActivity$2@215dede7
+      mCurState=5 mStateSaved=false mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{3b24dd94 V.E..... ... 0,0-1080,1920}
+        android.widget.LinearLayout{1eada03d V.E..... ... 0,0-1080,1920}
+          android.view.ViewStub{22ee0032 G.E..... ... 0,0-0,0 #102043a}
+          android.widget.FrameLayout{3c118183 V.E..... ... 0,75-1080,1920}
+            android.support.v7.internal.widget.ActionBarOverlayLayout{173c3f00 V.E..... ... 0,0-1080,1845 #7f0c0043 app:id/decor_content_parent}
+              android.support.v7.internal.widget.NativeActionModeAwareLayout{39d90339 V.E..... ... 0,168-1080,1845 #1020002 android:id/content}
+                android.widget.RelativeLayout{3777ed7e V.E..... ... 0,0-1080,1677}
+                  android.widget.FrameLayout{1d139c0b V.E..... ... 0,0-1080,1677 #7f0c00ae app:id/fragment_signup_container}
+                    android.widget.LinearLayout{1666fae8 V.E..... ... 0,0-1080,1677}
+                      android.widget.LinearLayout{15e0b2df V.E..... ... 48,48-1032,832}
+                        android.support.v7.widget.AppCompatTextView{3ea64b2c V.ED.... ... 201,234-783,315 #7f0c00ed app:id/textView2}
+                        com.digits.sdk.android.DigitsAuthButton{27bd99f5 VFED..C. ... 140,405-844,549 #7f0c00ee app:id/auth_button}
+                      android.widget.ImageView{3921638a V.ED.... ... 48,832-1032,846}
+                      android.widget.LinearLayout{6479dfb V.E..... ... 48,846-1032,1629}
+                        android.support.v7.widget.AppCompatTextView{29c2ee18 V.ED.... ... 188,172-796,253 #7f0c00ef app:id/textView}
+                        android.support.v7.widget.AppCompatEditText{2b1ae071 VFED..CL F.. 177,343-807,467 #7f0c00f0 app:id/editTextEmail}
+                        android.support.v7.widget.AppCompatButton{133a2e56 VFED..C. ... 222,467-761,611 #7f0c00f1 app:id/buttonSendVerifEMail}
+              android.support.v7.internal.widget.ActionBarContainer{16681ed7 V.ED.... ... 0,0-1080,168 #7f0c0044 app:id/action_bar_container}
+                android.support.v7.widget.Toolbar{3504d3c4 V.E..... ... 0,0-1080,168 #7f0c0045 app:id/action_bar}
+                  android.widget.TextView{192c12ad V.ED.... ... 48,43-233,124}
+                  android.support.v7.widget.ActionMenuView{442d9e2 V.E..... ... 1080,0-1080,168}
+                android.support.v7.internal.widget.ActionBarContextView{15a5d173 G.E..... ... 0,0-0,0 #7f0c0046 app:id/action_context_bar}
+
+  ACTIVITY com.mymoneymobile/.LoginActivity 33accd4c pid=2424
+    Local FragmentActivity 2fea0b9c State:
+      mCreated=truemResumed=false mStopped=true mReallyStopped=true
+      mLoadersStarted=false
+    FragmentManager misc state:
+      mActivity=com.mymoneymobile.LoginActivity@2fea0b9c
+      mContainer=android.support.v4.app.FragmentActivity$2@2f5d6830
+      mCurState=2 mStateSaved=true mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{25a42ca9 I.E..... ... 0,0-1080,1920}
+        android.widget.LinearLayout{38b22e V.E..... ... 0,0-1080,1920}
+          android.view.ViewStub{1c0211cf G.E..... ... 0,0-0,0 #102043a}
+          android.widget.FrameLayout{2368d75c V.E..... ... 0,75-1080,1920}
+            android.support.v7.internal.widget.ActionBarOverlayLayout{3269ea65 V.E..... ... 0,0-1080,1845 #7f0c0043 app:id/decor_content_parent}
+              android.support.v7.internal.widget.NativeActionModeAwareLayout{2ba1c33a V.E..... ... 0,168-1080,1845 #1020002 android:id/content}
+                android.widget.FrameLayout{1637fbeb V.E..... ... 0,0-1080,1677 #7f0c0054 app:id/fullscreen_content}
+                  android.widget.ScrollView{75a0d48 VFED.V.. ... 0,0-1080,1677 #7f0c008e app:id/scrollViewLogin}
+                    android.widget.LinearLayout{1f13c7e1 V.E..... ... 180,0-900,1479 #7f0c008f app:id/fullscreen_content_controls}
+                      android.widget.ImageView{3b58d906 V.ED.... ... 150,0-570,540 #7f0c0090 app:id/imageView1}
+                      android.support.v7.widget.AppCompatTextView{37986bc7 V.ED.... ... 15,570-202,627 #7f0c0091 app:id/username_label}
+                      android.support.v7.widget.AppCompatEditText{3fa6b5f4 VFED..CL F.. 0,657-720,777 #7f0c0092 app:id/txtlogin}
+                      android.support.v7.widget.AppCompatTextView{1424011d V.ED.... ... 15,807-276,864 #7f0c0093 app:id/password_label}
+                      android.support.v7.widget.AppCompatEditText{5197f92 VFED..CL ... 0,864-720,984 #7f0c0094 app:id/txtpassword}
+                      android.support.v7.widget.AppCompatTextView{2da5fd63 V.ED.... ... 15,1014-15,1071 #7f0c0095 app:id/messageLogin}
+                      android.support.v7.widget.AppCompatButton{20733d60 VFED..C. ... 0,1131-720,1275 #7f0c0096 app:id/loginbutton}
+                      android.support.v7.widget.AppCompatButton{6049219 VFED..C. ... 0,1335-720,1479 #7f0c0097 app:id/signupbutton}
+              android.support.v7.internal.widget.ActionBarContainer{ccc02de V.ED.... ... 0,0-1080,168 #7f0c0044 app:id/action_bar_container}
+                android.support.v7.widget.Toolbar{31710cbf V.E..... ... 0,0-1080,168 #7f0c0045 app:id/action_bar}
+                  android.support.v7.widget.ActionMenuView{19becf8c V.E..... ... 1080,0-1080,168}
+                android.support.v7.internal.widget.ActionBarContextView{2bc336d5 G.E..... ... 0,0-0,0 #7f0c0046 app:id/action_context_bar}

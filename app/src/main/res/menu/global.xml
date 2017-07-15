@@ -1,0 +1,40 @@
+
+<!-- "Mark Favorite", should appear as action button if possible -->
+
+
+<!-- Settings, should always be in the overflow -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item
+        android:id="@+id/share"
+        app:showAsAction="always"
+        android:icon="@drawable/share"
+        android:visible="true"
+        android:title="@string/share"/>-->
+
+    <item
+        android:id="@+id/refresh"
+        app:showAsAction="always"
+        android:icon="@drawable/refreshh"
+        android:title="@string/refresh"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/intercom"
+        app:showAsAction="always"
+        android:icon="@drawable/discussion"
+        android:title="@string/logout"/>
+    <item
+        android:id="@+id/settings"
+        app:showAsAction="always"
+        android:icon="@drawable/setting"
+        android:title="@string/settings"/>
+    <item
+        android:id="@+id/logout"
+        app:showAsAction="always"
+        android:icon="@drawable/logoutt"
+        android:title="@string/logout"/>
+
+
+</menu>
